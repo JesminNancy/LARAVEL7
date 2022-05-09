@@ -11,3 +11,5 @@ Route::get('/about', [SiteController::class, 'About']);
 Route::get('/contact', [SiteController::class, 'Contact']);
 
 Route::get('/name/{namevalue}', [ParameterController::class, 'MyName']);
+
+Route::get('/name/{firstName}/{middleName}/{lastName}/{age}', [ParameterController::class, 'Name']);

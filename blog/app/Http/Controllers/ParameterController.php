@@ -11,4 +11,10 @@ class ParameterController extends Controller
         return $namevalue;
     
     }
+    
+    function Name($firstName,$middleName,$lastName,$age){
+    
+        return "First Name: " .$firstName . "<br>Middle Name: ".$middleName . "<br> Last Name: ". $lastName. "<br> My Age: ".$age;
+    
+    }
 }
