@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\ParameterController;
+use App\Http\Controllers\MyController;
 
 // 	Basic Routing With Controller And View 
 Route::get('/', [SiteController::class, 'Home']);
@@ -47,4 +48,7 @@ Route::group(['prefix'=>'account'], function(){
   });
 
 });
+
+//Single Action Controller
+Route::get('/singleaction', MyController::class);
 
