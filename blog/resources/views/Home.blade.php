@@ -1,11 +1,13 @@
 
-<select>
 
-  @foreach ($dataKey as $CountryName)
+@forelse ($dataKey as $Country)
 
-  <option>{{ $CountryName }}</option>
+  <li>{{ $Country}}</li>
+  
+  @empty
+     <p>No Data Found</p> 
       
-  @endforeach
+  @endforelse
 
-</select>
+
 
