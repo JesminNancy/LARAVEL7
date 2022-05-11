@@ -10,16 +10,14 @@
   @endforelse --}}
   
   
-  @if($loginKey==true)
-  
-  <h1>You Are Loged In</h1>
-  
-  @elseif($loginKey==false)
-  
-  <h1>You Are Not Loged In</h1>
-  @else
-  <h1>You LogIn Status Not Found</h1>
-  @endif
+@foreach($dataKey as $Country)
+
+   {{-- {{$loop->index}} --}}
+   {{-- {{$loop->count}} --}}
+   @if($loop->odd)
+   {{$Country}}
+   @endif
+@endforeach
 
 
 
