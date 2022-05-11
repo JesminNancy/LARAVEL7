@@ -1,23 +1,14 @@
-
-
-{{-- @forelse ($dataKey as $Country)
-
-  <li>{{ $Country}}</li>
-  
-  @empty
-     <p>No Data Found</p> 
-      
-  @endforelse --}}
-  
-  
-@foreach($dataKey as $Country)
-
-   {{-- {{$loop->index}} --}}
-   {{-- {{$loop->count}} --}}
-   @if($loop->odd)
-   {{$Country}}
-   @endif
-@endforeach
+@php
+    
+   $num1= 30;
+   $num2= 50;
+   
+   $result = $num1 + $num2 ;
+   
+   echo $result . "<br>";
+   
+   echo time();
+@endphp
 
 
 
