@@ -1,0 +1,4 @@
+
+{{ $newsHeadlinekey }}
+
+{!!$newsHeadlinekey!!}

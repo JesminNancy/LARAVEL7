@@ -5,6 +5,7 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\ParameterController;
 use App\Http\Controllers\MyController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\HomeConroller;
 
 // 	Basic Routing With Controller And View 
 Route::get('/', [SiteController::class, 'Home']);
@@ -56,3 +57,5 @@ Route::get('/singleaction', MyController::class);
 //Resource Controller
 Route::resource('/photos', PhotoController::class);
 
+// Blade View
+Route::get('/home', [HomeConroller::class, 'showHome']);
