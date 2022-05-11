@@ -10,6 +10,9 @@ class HomeConroller extends Controller
     
         // $Data = array("Bangladesh", "India", "Canada", "America", "London");
         $Data= array();
-        return view('Home', ['dataKey'=>$Data]);
+        $login=false;
+        return view('Home', ['dataKey'=>$Data, 'loginKey'=>$login]);
+        
+        
     }
 }
