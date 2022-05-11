@@ -8,7 +8,7 @@ class HomeConroller extends Controller
 {
     function showHome(){
     
-        $newsHeadline= "<h1>Bangladesh</h1>";
-        return view('Home',['newsHeadlinekey'=>$newsHeadline]);
+        $Data = array("Bangladesh", "India", "Canada", "America", "London");
+        return view('Home', ['dataKey'=>$Data]);
     }
 }

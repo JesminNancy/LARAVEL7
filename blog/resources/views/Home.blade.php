@@ -1,15 +1,11 @@
 
-{{ $newsHeadlinekey }}
+<select>
 
-{!!$newsHeadlinekey!!}
+  @foreach ($dataKey as $CountryName)
 
-@for($i=0; $i<=100; $i++)
+  <option>{{ $CountryName }}</option>
+      
+  @endforeach
 
-  <button>{{ $i }}</button>
-@endfor
-<br><br><br><br>
-@for($i=0; $i<100; $i++)
+</select>
 
-<img style="width:100px;height:50px;" src="https://media.istockphoto.com/photos/hands-protecting-globe-of-green-tree-on-tropical-nature-summer-and-picture-id1206797959?s=612x612">
-  
-@endfor
