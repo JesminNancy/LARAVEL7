@@ -1,11 +1,15 @@
 
-{{-- @includeif('subview.Menb') --}}
+ @extends('layout.MasterLayout')
 
-{{-- @includeFirst(['subview.Footer', 'subview.Menu']) --}}
+@section('titleName','Home Page')
 
-{{-- @includeWhen(true, 'subview.Menu')
-@includeWhen(false, 'subview.Menu') --}}
+@section('buttonName','Submit Now')
 
-{{-- @includeUnless(true, 'subview.Menu') --}}
 
-@includeUnless(false, 'subview.Menu')
+@section('content')
+
+<button class="btn btn-primary">Sign Up</button><br><br>
+<button class="btn btn-primary">Sign Up</button><br><br>
+<button class="btn btn-primary">Sign Up</button><br><br>
+<button class="btn btn-primary">Sign Up</button><br><br>
+@endsection
