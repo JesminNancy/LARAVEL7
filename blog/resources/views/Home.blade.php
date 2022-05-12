@@ -1,7 +1,11 @@
-@include('subview.Menu')
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<h1>This is Body Content</h1>
-<br><br><br><br><br><br><br><br><br>
-@include('subview.Footer', ['footertextKey'=>"All Right Reserved By Donalt Trump"])
 
+{{-- @includeif('subview.Menb') --}}
 
+{{-- @includeFirst(['subview.Footer', 'subview.Menu']) --}}
+
+{{-- @includeWhen(true, 'subview.Menu')
+@includeWhen(false, 'subview.Menu') --}}
+
+{{-- @includeUnless(true, 'subview.Menu') --}}
+
+@includeUnless(false, 'subview.Menu')
